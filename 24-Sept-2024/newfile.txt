@@ -1,0 +1,3 @@
+The first line contains five space-separated integers n, m (2<=m<=n<=105), k (1<=k<=8*105) and r ( 0<=r<=2*105) - the number of cells, total number of terrorists, the time after which JK will be murdered (in minutes) and number of rounds of ammunition.
+The second line contains n space-separated integers a1, a2, ...ai.... an (1<=ai<=n || ai ==-1) that describe the cell numbers Srikant can move to. See the first example to understand clearly. Here the 1st cell leads to 3rd cell, 2nd cell leads to nowhere, 3rd cell leads to 8th cell and so on.
+Next m lines contain 2 space-separated integers which denote the cell number the 'j'th (1<=j<=m) terrorist guards and the number of times he needs to be shot. 
