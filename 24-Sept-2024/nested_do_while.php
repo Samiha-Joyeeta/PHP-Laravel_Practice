@@ -7,7 +7,8 @@
       echo "\n";
       do{
          $k = sprintf("%4u",$i*$j);
-         print "$k";
+         //$k = $i*$j;
+         print "$k\t";
          $j++;
       } 
       while ($j<=10);
@@ -16,5 +17,6 @@
    }
    while ($i<=5);
    //echo "\n";
+   //The print_r() function used here displays the data stored in the array in an easy to understand human readable form.
    echo "<pre>";
 ?>

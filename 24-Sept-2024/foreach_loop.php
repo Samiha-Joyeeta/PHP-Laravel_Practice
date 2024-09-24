@@ -17,14 +17,20 @@ echo "<pre>";
     echo "Key: $p => Val: $b[$p] \n";
  }
 
- $multidim =array(
+ $multidim =array(   //2D array
     array(1,2,3,4),
     array("one","two","three","four","five"),
     array(1=>"one",2=>"two","three"=>3)
 
  );
 
- foreach($multidim as $index=>$valarray)
+ $array1 = [    //2D array
+    [1,2,3,4],
+    [10, 20, 30, 40],
+    [100, 200, 300, 400]
+ ];  
+
+ foreach($array1 as $index=>$valarray)
  {
     echo "array No: $index";
     foreach($valarray as $key=>$val)
@@ -40,5 +46,23 @@ echo "<pre>";
     echo "Element at index $index is $val \n";
 
  }
+
+ $array3 = [   //3D array
+    [[1, 0, 9],[0, 5, 6],[1, 0, 3]], 
+    [[0, 4, 6],[0, 0, 1],[1, 2, 7]],
+ ];
+
+ foreach ($array3 as $arr) {
+    foreach ($arr as $row) {
+       foreach ($row as $element) {
+          echo "$element ";
+       }
+       echo "\n";
+    }
+    echo "\n";
+ }
+
+ 
+
 echo "</pre>";
 ?>
